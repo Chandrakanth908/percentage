@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grade
+        </title>
+        <style>
+            .main{
+                background-color: cornflowerblue;
+                color: rgb(160, 28, 28);
+                max-width: 20%;
+                padding: 50px;
+                margin-left: 30%;
+                margin-top: 10%;
+                border-radius: 30px;
+                box-shadow: 0 12px 15px rgb(185, 204, 10);
+               
+            }
+            .container{
+                border-radius: 10%;
+            }
+            .cad input {
+                border: none;
+                background-color: chartreuse;
+                border-bottom: 2px solid white;
+                border-radius: 10px;
+
+            }
+            .cad input:hover{
+                background-color: rgb(73, 82, 55);
+            }
+            
+        </style>
+    </head>
+    <body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdcj4r3PFCgQ0mhfVfRRd-rigPoHZ-oAshSR5JZjLdg72BUxGWuWpK_cEdVUJuquksnIo&usqp=CAU);">
+        <div class="main">
+            <h2><strong>Percentage & Grade</strong></h2>
+            <form onsubmit="return PG()">
+                <div>
+                    <input type="text" id="text1" placeholder="Enter Marks" >
+                </div><br>
+                <div>
+                    <input type="text" id="text2" placeholder="Enter Total Marks">
+                </div>
+                <br>
+                <div class="cad">
+                    <input type="submit">
+                </div>
+                
+                <br>
+
+                <div class="container">
+
+                <div>
+                    <label>Percentage</label><br>
+                    <input type="text" id = "result" disabled>
+                </div>
+                <br>
+                
+                <div>
+                    <label>Grade</label><br>
+                    <input type="text" id="grade" disabled>
+                </div><br>
+                </div>
+                
+                <div>
+                    <script src="./grad.js"></script>
+                </div>
+            
+            </form>
+        </div>
+    </body>
+</html>
